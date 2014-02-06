@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 142px; 
+}
+.site-footer {
+  background: orange;
+}
+
+h1{
+ font-family: arial;
+ font-size: 20px;
+}
+
+h2{
+ font-family: arial;
+ font-size: 18px;
+}
+
+p{
+ margin: 0 50px 30px 10px;
+ font-family: arial;
+ font-size: 14px;
+
+}
+
+h1.logo {
+	width: 117px;
+	height: 117px;
+	background-image: url(../images/Volkswagen_Logo2.png);
+}
+
+/* menu */
+
+nav {
+ background-color: #1F00CA;
+ border-top: solid 1px #FFFFFF;
+ border-bottom: solid 1px #FFFFFF;
+}
+
+	nav ul {
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-weight: bold;
+	 color: white;
+	 text-align: center;
+	 margin: 0;
+	 padding-bottom: 5px;
+	 padding-top: 5px;
+    }
+
+		nav ul li {
+		 display: inline;
+	 	 margin-left: -4px;
+        }
+
+			nav ul li a {
+			 padding: 5px 10px 5px 10px;
+			 color: white;
+			 text-decoration: none;
+			 border-right: 1px solid #fff;
+			}
+
+			nav ul li a:hover { background-color:#16008D; color:white; }
+			nav a { border-left:1px solid #fff; background-color:black; }
+
+/* einde menu */
+
+header{
+ padding: .5em;
+ background-color: #ddd;
+ border-bottom: 1px solid gray;
+}
+
+	#link-logo{ width:20%; font-size:30px; }
+
+		#link-logo a{
+	     text-decoration: none;
+		 color: blue;
+		 font-size: 30px;
+        }
+
+#container{
+ width: 90%;
+ margin: 10px auto;
+ background-color: #fff;
+ color: #333;
+ min-height: 100%;
+}
+
+#content{
+	height: 100%; 
+	padding-bottom: 130px;
+}
+
+	.linker-kolom{ 
+		width:50%; 
+		float:left;
+		padding: 0 10px 0 10px; 
+	}
+
+		@media (max-width: 470px){
+			.linker-kolom{
+				width: 100%;
+			}
+		}
+	
+	.rechter-kolom{padding: 0 10px 0 10px;}
+
+		@media (max-width: 470px){
+			.rechter-kolom { width: 100%;}
+		}	
+
+			@media (min-width: 470px){
+				.rechter-kolom{ width: 100%;}
+			}
+
+	.onder-kolom{ 
+		width:100%; 
+		clear: both;
+		padding: 0 10px 0 10px;
+	}
+
+		@media (min-width: 800px){
+			.onder-kolom{ max-width: 800px;}
+		}
+
+			
+
+ol{ font-family:arial; font-size:14px; }
+
+ul{ font-family:arial; font-size:14px; }
+
+
+
+	.footerColum{
+	 width: 33%;
+	 float: left;
+	 margin-top: 10px;
+    }
+
+		.footerColum a{ text-decoration:none; color:white; }
